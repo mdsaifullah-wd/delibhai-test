@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn-main {
+  background: #00febe;
+  color: #0f1112;
+}
+
+.btn-main:hover {
+  background: #00febe;
+}
+
+.btn-light {
+  background: #ccf4ea;
+  color: #0f1112;
+}
+
+.btn-light:hover {
+  background: #00febe;
+}
+
+.btn-dark {
+  background: #0f1112;
+  color: #ccf4ea;
+}
+
+.btn-dark:hover {
+  background: #00febe;
+}
+
+.bg-main {
+  background: #00febe;
+  color: #fff;
+}
+
+.bg-dark {
+  background: #0f1112;
+  color: #fff;
+}
+
+.bg-medium {
+  background: #ccc;
+  color: #000;
+}
+
+.bg-light {
+  background: #ccf4ea;
+  color: #000;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.l-heading {
+  font-size: 4rem;
+}
+
+.s-heading {
+  font-size: 1.5rem;
+}
+
+.m-heading {
+  font-size: 2rem;
+}
+
+.bottom-line {
+  background: #00febe;
+  width: 3rem;
+  height: 2px;
+  margin: 0 auto 1rem auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+body {
+  font-family: "Noto Sans Bengali", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #0f1112;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0f1112;
+}
+
+img {
+  width: 100%;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
