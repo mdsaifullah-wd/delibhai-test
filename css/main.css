@@ -152,6 +152,10 @@
   text-align: center;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: "Noto Sans Bengali", sans-serif;
   line-height: 1.6;
@@ -176,4 +180,33 @@ h2,
 h3,
 h4 {
   text-transform: uppercase;
+}
+
+#main-header {
+  background: #031742;
+  color: #00febe;
+  padding: 1.5rem 0;
+}
+
+#main-header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0;
+}
+
+#main-header .navbar .logo {
+  width: 50px;
+  height: 50px;
+}
+
+#main-header .navbar p {
+  font-family: "Galada", cursive;
+  font-size: 3rem;
 }
