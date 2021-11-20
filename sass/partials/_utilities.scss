@@ -5,6 +5,21 @@
   margin: 0 auto;
   overflow: hidden;
 }
+.medium-container {
+  max-width: 800px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.small-container {
+  max-width: 720px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.active {
+  color: $main-color !important;
+}
 
 // Buttons
 %btn-shared {
@@ -22,7 +37,7 @@
     color: $dark-color;
 
     &:hover {
-      background: $main-color;
+      background: $main-color-dark;
     }
   }
 
@@ -154,4 +169,19 @@
   padding-bottom: 0.5rem;
   font-weight: 100;
   text-align: center;
+}
+
+// Form Title
+.form-title {
+  background: $main-color-dark;
+  color: $dark-color;
+  padding: 1rem;
+}
+
+.required::after {
+  content: " *";
+  color: red;
+  font-size: 1.3rem;
+  position: relative;
+  top: -0.3rem;
 }

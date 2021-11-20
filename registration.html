@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Noto+Sans+Bengali:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>deliBhai | Registration</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Section: Header -->
+    <header id="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html"><img src="img/logo.png" alt="deliBhai" class="logo"></a>
+                <p>শীঘ্রই আসছে</p>
+                <ul>
+                    <li><a href="index.html">হোম</a></li>
+                    <li><a href="registration.html" class="active">রেজিস্ট্রেশন</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Section: Registration Form -->
+    <section id="registration-form" class="py-3">
+        <div class="container">
+            <form action="#" name="contact" method="POST" data-netlify="true">
+                <!-- Step One -->
+                <div class="medium-container">
+                    <div class="form-title">
+                        <p>deli<b>Bhai</b> হিরো সাধারণ তথ্য:</p>
+                    </div>
+                    <div class="small-container">
+                        <div class="form-input py-2">
+                            <div class="form-group">
+                                <label for="fullName" class="required">পুরো নাম:</label>
+                                <input type="text" id="fullName" name="fullName" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subName">উপনাম:</label>
+                                <input type="text" id="subName" name="subName" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fatherName" class="required">পিতার নাম:</label>
+                                <input type="text" id="fatherName" name="fatherName" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="motherName" class="required">মাতার নাম:</label>
+                                <input type="text" id="motherName" name="motherName" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                            </div>
+                            <div class="form-group span">
+                                <label for="address" class="required">ঠিকানা:</label>
+                                <textarea name="address" id="address" rows="1"placeholder="এখানে বিস্তারিত ঠিকানা লিখুন" required></textarea>
+                            </div>
+                            <div class="form-group span">
+                                <label for="email">ই-মেইল আইডি:</label>
+                                <input type="email" id="email" name="email" placeholder="প্লেইস হোল্ডার টেক্সট">
+                            </div>
+                            <div class="form-group">
+                                <label for="primaryPhone" class="required">ফোন নাম্বার:</label>
+                                <input type="number" id="primaryPhone" name="primaryPhone" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="secondaryPhone">বিকল্প ফোন নাম্বার:</label>
+                                <input type="number" id="secondaryPhone" name="secondaryPhone" placeholder="প্লেইস হোল্ডার টেক্সট">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="NID">NID নম্বর:</label>
+                                <input type="number" id="NID" name="NID" placeholder="প্লেইস হোল্ডার টেক্সট">
+                            </div>
+                            <div class="form-group">
+                                <label for="birthCirtificateNumber">জন্ম নিবন্ধন নম্বর:</label>
+                                <input type="number" id="birthCirtificateNumber" name="birthCirtificateNumber" placeholder="প্লেইস হোল্ডার টেক্সট">
+                            </div>
+                            <div class="form-group-inline">
+                                <label for="birthDate" class="required">জন্ম তারিখ:</label>
+                                <input type="date" id="birthDate" name="birthDate" required>
+                            </div>
+                            <div class="form-group-inline">
+                                <label for="maritalStatus" class="required">বৈবাহিক অবস্থা:</label>
+                                <select name="maritalStatus" id="maritalStatus" required>
+                                    <option value="Unmarried">অবিবাহিত</option>
+                                    <option value="Married">বিবাহিত
+                                    </option>
+                                    <option value="Devorced">তালাকপ্রাপ্ত</option>
+                                    <option value="Other">অন্যান্য
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group-inline">
+                                <label for="sex" class="required">লিঙ্গ:</label>
+                                <input type="radio" id="male" name="sex" value="Male">
+                                <label for="male">পুরুষ</label>
+                                <input type="radio" id="female" name="sex" value="Female">
+                                <label for="female">মহিলা</label>
+                                <input type="radio" id="other" name="sex" value="Other">
+                                <label for="other">অন্যান্য</label>
+                            </div>
+                            <div class="form-group-inline">
+                                <label for="education" class="required">শিক্ষাগত যোগ্যতা:</label>
+                                <select name="education" id="education" required>
+                                    <option value="Primary">প্রাথমিক</option>
+                                    <option value="JSC">জেএসসি
+                                    </option>
+                                    <option value="SSC">এসএসসি</option>
+                                    <option value="HSC">এইচএসসি</option>
+                                    <option value="Degree(Pass)">স্নাতক(পাস)</option>
+                                    <option value="Honors">স্নাতক(সম্মান)</option>
+                                    <option value="Masters">স্নাতকোত্তর</option>
+                                    <option value="Other">অন্যান্য
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group-inline span">
+                                <label for="bloodGroup" class="required">ব্লাড গ্রুপ:</label>
+                                <input type="radio" id="A+" name="bloodGroup" value="A+">
+                                <label for="A+">এ+</label>
+                                <input type="radio" id="B+" name="bloodGroup" value="B+">
+                                <label for="B+">বি+</label>
+                                <input type="radio" id="AB+" name="bloodGroup" value="AB+">
+                                <label for="AB+">এবি+</label>
+                                <input type="radio" id="O+" name="bloodGroup" value="O+">
+                                <label for="O+">ও+</label>
+                                <input type="radio" id="A-" name="bloodGroup" value="A-">
+                                <label for="A-">এ-</label>
+                                <input type="radio" id="B-" name="bloodGroup" value="B-">
+                                <label for="B-">বি-</label>
+                                <input type="radio" id="AB-" name="bloodGroup" value="AB-">
+                                <label for="AB-">এবি-</label>
+                                <input type="radio" id="O-" name="bloodGroup" value="O-">
+                                <label for="O-">ও-</label>
+                                <input type="radio" id="Unknown" name="bloodGroup" value="Unknown" checked>
+                                <label for="Unknown">জানা নেই</label>
+        
+                            </div>
+                            <div class="form-group">
+                                <label for="mobileBanking" class="required">মোবাইল ব্যাংকিং নম্বর:</label>
+                                <input type="number" name="mobileBanking" id="mobileBanking" placeholder="প্লেইস হোল্ডার টেক্সট">
+                            </div>
+                            <div class="form-group-inline">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="mobileBankingProvider" value="bKash"> <img src="img/mobileBanking/bkash.png" alt="bKash">&nbsp;&nbsp;
+                                    <input type="checkbox" name="mobileBankingProvider" value="Nagad"> <img src="img/mobileBanking/nagad.png" alt="Nagad">&nbsp;&nbsp;
+                                    <input type="checkbox" name="mobileBankingProvider" value="Rocket"> <img src="img/mobileBanking/rocket.png" alt="Rocket">&nbsp;&nbsp;
+                                    <input type="checkbox" name="mobileBankingProvider" value="Surecash"> <img src="img/mobileBanking/surecash.png" alt="SureCash">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step Two -->
+                <div class="medium-container">
+                    <div class="form-title">
+                        <p>deli<b>Bhai</b> হিরো বাহনের তথ্য:</p>
+                    </div>
+                    <div class="small-container">
+                        <div class="form-input py-2">
+                            <div class="form-group">
+                                <label for="vahicleModel" class="required">গাড়ির মডেল:</label>
+                                <input type="text" id="vahicleModel" name="vahicleModel" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                            </div>
+                            <div class="form-group vahicleType">
+                                <label for="vahicleType" class="required">গাড়ির ধরণ:</label>
+                                <select name="vahicleType" id="vahicleType" required>
+                                    <option value="Motor Cycle">মোটর সাইকেল</option>
+                                    <option value="Auto Rickshaw With Roof">অটো রিক্সা (ছাদ আছে)</option>
+                                    <option value="Auto Rickshaw Without Roof">অটো রিক্সা (ছাদ নেই)</option>
+                                    <option value="Tomtom">টমটম</option>
+                                    <option value="CNG">সিএনজি</option>
+                                    <option value="Truck">ট্রাক</option>
+                                    <option value="Mahindra">মাহিন্দ্র</option>
+                                    <option value="Zeef">জ্বীফ</option>
+                                    <option value="Tractor">ট্রাক্টর</option>
+                                    <option value="Power Tiller">পাওয়ার টিলার</option>
+                                    <option value="Private Car">প্রাইভেট কার</option>
+                                    <option value="Hiace">হাইচ গাড়ি</option>
+                                    <option value="Ambulance">এম্বুলেন্স</option>
+                                    <option value="Other">অন্যান্য</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="vahicleNumber" class="required">গাড়ির নম্বর:</label>
+                                <input type="text" id="vahicleNumber" name="vahicleNumber" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="vahicleName" class="required">গাড়ির নাম:</label>
+                                <input type="text" id="vahicleName" name="vahicleName" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                            </div>
+                            <div class="form-group-inline span">
+                                <label for="OwnerOfVahicle" class="required">গাড়ি অন্যের মালিকানাধীন?</label>
+                                <input type="radio" id="Yes" name="OwnerOfVahicle" value="Yes">
+                                <label for="Yes">হ্যাঁ</label>
+                                <input type="radio" id="No" name="OwnerOfVahicle" value="No" checked>
+                                <label for="No">না</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="OwnerName" class="required">মালিকের নাম:</label>
+                                <input type="text" id="OwnerName" name="OwnerName" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="OwnerPhone" class="required">মোবাইল নাম্বার:</label>
+                                <input type="number" id="OwnerPhone" name="OwnerPhone" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                            </div>
+                            <div class="form-group span">
+                                <label for="OwnerAddress" class="required">ঠিকানা:</label>
+                                <textarea name="OwnerAddress" id="OwnerAddress" rows="1"placeholder="এখানে বিস্তারিত ঠিকানা লিখুন" required></textarea>
+                            </div>
+                            <div class="form-group-inline span">
+                                <label for="UsaOfVahicle" class="required">গাড়ির ব্যবহার:</label>
+                                <input type="radio" id="Rented" name="UsaOfVahicle" value="Rented">
+                                <label for="Rented">ভাড়ায় চালিত</label>
+                                <input type="radio" id="Personal" name="UsaOfVahicle" value="Personal" checked>
+                                <label for="Personal">ব্যক্তিগত</label>
+                            </div>
+                            <div class="form-group-inline span">
+                                <label for="TypeOfServices" class="required">গাড়ির সেবার ধরণ:</label>
+                                <input type="radio" id="Local" name="TypeOfServices" value="Local">
+                                <label for="Local">লোকাল</label>
+                                <input type="radio" id="Reserve" name="TypeOfServices" value="Reserve">
+                                <label for="Reserve">রিজার্ভ</label>
+                                <input type="radio" id="local-reserve" name="TypeOfServices" value="local-reserve" checked>
+                                <label for="local-reserve">লোকাল ও রিজার্ভ</label>
+                                <input type="radio" id="contruct" name="TypeOfServices" value="contruct">
+                                <label for="contruct">কন্ট্রাক্ট</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step Three -->
+                <div class="medium-container">
+                    <div class="form-title">
+                        <p>deli<b>Bhai</b> হিরো সেবাদান তথ্য:</p>
+                    </div>
+                    <div class="small-container">
+                        <div class="form-input py-2">
+                            <div class="form-group span">
+                                <label for="MostStayedStation" class="required">যে স্ট্যাশন/স্থানে বেশি অবস্থান করে থাকেন:</label>
+                                <input type="text" id="MostStayedStation" name="MostStayedStation" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                            </div>
+                            <div class="form-group-inline span time">
+                                <label for="ServiceTime" class="required">কোন কোন সময় সেবাদানে ইচ্ছুক নির্বাচন করুন:</label>
+                                <div class="ServiceTime">
+                                    <div>
+                                        <input type="checkbox" name="ServiceTime" id="6am-10pm" value="6am-10pm">
+                                        <label for="6am-10pm">ভোর থেকে সন্ধ্যারাত পর্যন্ত <span>(06:00AM- 10:00PM)</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="ServiceTime" id="8am-5pm" value="8am-5pm">
+                                        <label for="8am-5pm">সকাল থেকে বিকাল পর্যন্ত <span>(08:00AM- 05:00PM)</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="ServiceTime" id="6am-12pm" value="6am-12pm">
+                                        <label for="6am-12pm">দিনের প্রথম ভাগ <span>(06:00AM- 12:00PM)</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="ServiceTime" id="12pm-6pm" value="12pm-6pm">
+                                        <label for="12pm-6pm">দিনের শেষ ভাগ <span>(12:00PM- 06:00PM)</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="ServiceTime" id="6pm-12am" value="6pm-12am">
+                                        <label for="6pm-12am">রাতের প্রথম ভাগ <span>(06:00PM- 12:00AM)</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="ServiceTime" id="12am-6am" value="12am-6am">
+                                        <label for="12am-6am">রাতের শেষ ভাগ <span>(12:00AM- 06:00AM)</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="ServiceTime" id="24hrs" value="24hrs">
+                                        <label for="24hrs">দিনরাত <span>(24 Hours)</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group span">
+                                <textarea name="Comment" id="Comment" placeholder="আপনার কোন মতামত যদি থাকে:"></textarea>
+                            </div>
+                            <div class="form-group-inline span time">
+                                <label for="ServiceArea" class="required">কোন কোন গ্রাম/এলাকায় সেবাদানে ইচ্ছুক:</label>
+                                <div class="ServiceArea">
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="HeakoBazar" value="HeakoBazar">
+                                            <label for="HeakoBazar">হেয়াকো বাজার</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="SowdagorPara" value="SowdagorPara">
+                                            <label for="SowdagorPara">সওদাগরপাড়া</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="TTO" value="TTO">
+                                            <label for="TTO">টি.টি.ও</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="ModdhomParaHeako" value="ModdhomParaHeako">
+                                            <label for="ModdhomParaHeako">মধ্যমপাড়া(হেয়াকো)</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="ChowdhuryPara" value="ChowdhuryPara">
+                                            <label for="ChowdhuryPara">চৌধুরীপাড়া</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="IslamPur" value="IslamPur">
+                                            <label for="IslamPur">ইসলামপুর</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="BekerBazar" value="BekerBazar">
+                                            <label for="BekerBazar">বেকের বাজার</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="PurboPara" value="PurboPara">
+                                            <label for="PurboPara">পূর্বপাড়া</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="SorkarPara" value="SorkarPara">
+                                            <label for="SorkarPara">সরকারপাড়া</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="Olipur" value="Olipur">
+                                            <label for="Olipur">অলিপুর</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="MuslimPur" value="MuslimPur">
+                                            <label for="MuslimPur">মুসলিমপুর</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="MuslimPara" value="MuslimPara">
+                                            <label for="MuslimPara">মুসলিমপাড়া</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="NotunPara" value="NotunPara">
+                                            <label for="NotunPara">নতুনপাড়া</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="SelfieRoad" value="SelfieRoad">
+                                            <label for="SelfieRoad">সেলফিরোড</label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="WestSikdarkhil" value="WestSikdarkhil">
+                                            <label for="WestSikdarkhil">পশ্চিম সিকদারখিল</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="BanglaPara" value="BanglaPara">
+                                            <label for="BanglaPara">বাংলাপাড়া</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="Chelaujan" value="Chelaujan">
+                                            <label for="Chelaujan">চেলাউজান</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="kechia" value="kechia">
+                                            <label for="kechia">কেচিয়া</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="Sikdarkhil" value="Sikdarkhil">
+                                            <label for="Sikdarkhil">সিকদারখিল</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="Dhuliachari" value="Dhuliachari">
+                                            <label for="Dhuliachari">ধুলিয়াছড়ি</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="Amtoli" value="Amtoli">
+                                            <label for="Amtoli">আমতলী</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="Gozaria" value="Gozaria">
+                                            <label for="Gozaria">গজারিয়া</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="Sonarkhil" value="Sonarkhil">
+                                            <label for="Sonarkhil">সোনারখিল</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="ServiceArea" id="MujibNagar" value="MujibNagar">
+                                            <label for="MujibNagar">মুজিবনগর</label>
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="ServiceArea">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-inline span">
+                                <label for="Agree" class="required">ডেলিভাই এর মাধ্যমে ভাড়া পেতে চান?</label>
+                                <input type="radio" id="Yes" name="Agree" value="Yes">
+                                <label for="Yes">হ্যাঁ</label>
+                                <input type="radio" id="No" name="Agree" value="No">
+                                <label for="No">না</label>
+                            </div>                  
+                            <div class="form-group-inline span">
+                                <label for="Commission" class="required">প্রতি অর্ডারে ৫ টাকা হারে জমা দিন:</label>
+                                <input type="radio" id="Dailly" name="Commission" value="Dailly">
+                                <label for="Dailly">প্রতি দিনে</label>
+                                <input type="radio" id="Weekly" name="Commission" value="Weekly">
+                                <label for="Weekly">প্রতি সপ্তাহে</label>
+                                <input type="radio" id="Monthly" name="Commission" value="Monthly">
+                                <label for="Monthly">প্রতি মাসে</label>
+                            </div>
+                            <div class="form-group-inline">
+                                <label for="SubmitDate" class="required">তারিখ:</label>
+                                <input type="date" id="SubmitDate" name="SubmitDate" disabled required>
+                            </div>             
+                            <div class="form-group-inline">
+                                <label for="Signature" class="required">সাক্ষর:</label>
+                                <input type="file" id="Signature" name="Signature" required>
+                            </div>
+                            <button type="submit" class="btn-main span">সাবমিট</button>          
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

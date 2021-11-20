@@ -12,6 +12,24 @@
   overflow: hidden;
 }
 
+.medium-container {
+  max-width: 800px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.small-container {
+  max-width: 720px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.active {
+  color: #00febe !important;
+}
+
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -27,7 +45,7 @@
 }
 
 .btn-main:hover {
-  background: #00febe;
+  background: #00c795;
 }
 
 .btn-light {
@@ -152,15 +170,31 @@
   text-align: center;
 }
 
+.form-title {
+  background: #00c795;
+  color: #0f1112;
+  padding: 1rem;
+}
+
+.required::after {
+  content: " *";
+  color: red;
+  font-size: 1.3rem;
+  position: relative;
+  top: -0.3rem;
+}
+
 html {
   font-size: 10px;
 }
 
 body {
   font-family: "Noto Sans Bengali", sans-serif;
-  line-height: 1.6;
-  background: #fff;
+  font-size: 2rem;
+  line-height: 2rem;
+  background: #ccf4ea;
   color: #0f1112;
+  padding-bottom: 20rem;
 }
 
 ul {
@@ -185,7 +219,7 @@ h4 {
 #main-header {
   background: #031742;
   color: #00febe;
-  padding: 1.5rem 0;
+  padding: 1.5rem;
 }
 
 #main-header .navbar {
@@ -209,4 +243,175 @@ h4 {
 #main-header .navbar p {
   font-family: "Galada", cursive;
   font-size: 3rem;
+  line-height: 3rem;
+}
+
+#main-header .navbar ul li {
+  display: inline-block;
+}
+
+#main-header .navbar ul li a {
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.5rem 1rem;
+}
+
+#main-header .navbar ul li a:hover {
+  color: #00febe;
+}
+
+#registration-form {
+  background: #ccf4ea;
+}
+
+#registration-form .form-input {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+#registration-form .form-input input,
+#registration-form .form-input textarea {
+  outline: none;
+  border: #999 1px solid;
+}
+
+#registration-form .form-input input:focus,
+#registration-form .form-input textarea:focus {
+  border: #00c795 1px solid;
+}
+
+#registration-form .form-input select {
+  outline: none;
+  border: #999 0.2px solid;
+}
+
+#registration-form .form-input select:focus {
+  border: #00c795 0.2px solid;
+}
+
+#registration-form .span {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
+#registration-form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#registration-form .form-group textarea {
+  height: 5rem;
+  overflow: hidden;
+}
+
+#registration-form .form-group input,
+#registration-form .form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+}
+
+#registration-form .form-group #Comment {
+  height: 10rem;
+  overflow: hidden;
+}
+
+#registration-form .form-group-inline {
+  margin: 1rem 0;
+  position: relative;
+}
+
+#registration-form .form-group-inline .checkbox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#registration-form .form-group-inline .checkbox input[type="checkbox"] {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+#registration-form .form-group-inline .checkbox img {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  position: relative;
+  top: 0.5rem;
+}
+
+#registration-form .form-group-inline input[type="radio"] {
+  margin-left: 0.75rem;
+}
+
+#registration-form .form-group-inline label[for="mobileBanking"] {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#registration-form .form-group-inline input[type="number"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+#registration-form .form-group-inline input[type="date"],
+#registration-form .form-group-inline select {
+  position: absolute;
+  right: 0;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+#registration-form .form-group-inline input[type="date"] {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+#registration-form .form-group-inline .ServiceTime {
+  margin: 1rem 0 0 4rem;
+}
+
+#registration-form .form-group-inline .ServiceTime span {
+  color: #555;
+  font-size: 1.6rem;
+}
+
+#registration-form .form-group-inline .ServiceArea {
+  margin: 1rem 0 0 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+#registration-form .form-group-inline .ServiceArea div div {
+  margin: 0.4rem 0;
+  background: #a2ebd9;
+}
+
+#registration-form .form-group-inline .ServiceArea input[type="text"] {
+  padding: 0.1rem;
+  width: 100%;
+  outline: none;
+  border: #00c795 1px solid;
+}
+
+#registration-form .vahicleType label {
+  margin-bottom: 1rem;
+}
+
+#registration-form .vahicleType select {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }

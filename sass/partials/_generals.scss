@@ -3,9 +3,11 @@ html {
 }
 body {
   font-family: "Noto Sans Bengali", sans-serif;
-  line-height: 1.6;
-  background: #fff;
+  font-size: 2rem;
+  line-height: 2rem;
+  background: $light-color;
   color: $dark-color;
+  padding-bottom: 20rem;
 }
 ul {
   list-style: none;
