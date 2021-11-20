@@ -95,11 +95,11 @@
                             </div>
                             <div class="form-group-inline">
                                 <label for="sex" class="required">লিঙ্গ:</label>
-                                <input type="radio" id="male" name="sex" value="Male">
+                                <input type="radio" id="male" name="sex" value="Male" required>
                                 <label for="male">পুরুষ</label>
-                                <input type="radio" id="female" name="sex" value="Female">
+                                <input type="radio" id="female" name="sex" value="Female" required>
                                 <label for="female">মহিলা</label>
-                                <input type="radio" id="other" name="sex" value="Other">
+                                <input type="radio" id="other" name="sex" value="Other" required>
                                 <label for="other">অন্যান্য</label>
                             </div>
                             <div class="form-group-inline">
@@ -113,35 +113,35 @@
                                     <option value="Degree(Pass)">স্নাতক(পাস)</option>
                                     <option value="Honors">স্নাতক(সম্মান)</option>
                                     <option value="Masters">স্নাতকোত্তর</option>
-                                    <option value="Other">অন্যান্য
+                                    <option value="Other" selected>অন্যান্য
                                     </option>
                                 </select>
                             </div>
                             <div class="form-group-inline span">
                                 <label for="bloodGroup" class="required">ব্লাড গ্রুপ:</label>
-                                <input type="radio" id="A+" name="bloodGroup" value="A+">
+                                <input type="radio" id="A+" name="bloodGroup" required value="A+">
                                 <label for="A+">এ+</label>
-                                <input type="radio" id="B+" name="bloodGroup" value="B+">
+                                <input type="radio" id="B+" name="bloodGroup" required value="B+">
                                 <label for="B+">বি+</label>
-                                <input type="radio" id="AB+" name="bloodGroup" value="AB+">
+                                <input type="radio" id="AB+" name="bloodGroup" required value="AB+">
                                 <label for="AB+">এবি+</label>
-                                <input type="radio" id="O+" name="bloodGroup" value="O+">
+                                <input type="radio" id="O+" name="bloodGroup" required value="O+">
                                 <label for="O+">ও+</label>
-                                <input type="radio" id="A-" name="bloodGroup" value="A-">
+                                <input type="radio" id="A-" name="bloodGroup" required value="A-">
                                 <label for="A-">এ-</label>
-                                <input type="radio" id="B-" name="bloodGroup" value="B-">
+                                <input type="radio" id="B-" name="bloodGroup" required value="B-">
                                 <label for="B-">বি-</label>
-                                <input type="radio" id="AB-" name="bloodGroup" value="AB-">
+                                <input type="radio" id="AB-" name="bloodGroup" required value="AB-">
                                 <label for="AB-">এবি-</label>
-                                <input type="radio" id="O-" name="bloodGroup" value="O-">
+                                <input type="radio" id="O-" name="bloodGroup" required value="O-">
                                 <label for="O-">ও-</label>
-                                <input type="radio" id="Unknown" name="bloodGroup" value="Unknown" checked>
+                                <input type="radio" id="Unknown" name="bloodGroup" required value="Unknown">
                                 <label for="Unknown">জানা নেই</label>
         
                             </div>
                             <div class="form-group">
                                 <label for="mobileBanking" class="required">মোবাইল ব্যাংকিং নম্বর:</label>
-                                <input type="number" name="mobileBanking" id="mobileBanking" placeholder="প্লেইস হোল্ডার টেক্সট">
+                                <input type="number" name="mobileBanking" id="mobileBanking" placeholder="প্লেইস হোল্ডার টেক্সট" required>
                             </div>
                             <div class="form-group-inline">
                                 <div class="checkbox">
@@ -163,8 +163,8 @@
                     <div class="small-container">
                         <div class="form-input py-2">
                             <div class="form-group">
-                                <label for="vahicleModel" class="required">গাড়ির মডেল:</label>
-                                <input type="text" id="vahicleModel" name="vahicleModel" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                                <label for="vahicleModel">গাড়ির মডেল:</label>
+                                <input type="text" id="vahicleModel" name="vahicleModel" placeholder="প্লেইস হোল্ডার টেক্সট">
                             </div>
                             <div class="form-group vahicleType">
                                 <label for="vahicleType" class="required">গাড়ির ধরণ:</label>
@@ -186,37 +186,37 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="vahicleNumber" class="required">গাড়ির নম্বর:</label>
-                                <input type="text" id="vahicleNumber" name="vahicleNumber" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                                <label for="vahicleNumber">গাড়ির নম্বর:</label>
+                                <input type="text" id="vahicleNumber" name="vahicleNumber" placeholder="প্লেইস হোল্ডার টেক্সট">
                             </div>
                             <div class="form-group">
-                                <label for="vahicleName" class="required">গাড়ির নাম:</label>
-                                <input type="text" id="vahicleName" name="vahicleName" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                                <label for="vahicleName">গাড়ির নাম:</label>
+                                <input type="text" id="vahicleName" name="vahicleName" placeholder="প্লেইস হোল্ডার টেক্সট">
                             </div>
                             <div class="form-group-inline span">
                                 <label for="OwnerOfVahicle" class="required">গাড়ি অন্যের মালিকানাধীন?</label>
-                                <input type="radio" id="Yes" name="OwnerOfVahicle" value="Yes">
+                                <input type="radio" id="Yes" name="OwnerOfVahicle" value="Yes" required>
                                 <label for="Yes">হ্যাঁ</label>
-                                <input type="radio" id="No" name="OwnerOfVahicle" value="No" checked>
+                                <input type="radio" id="No" name="OwnerOfVahicle" value="No" required>
                                 <label for="No">না</label>
                             </div>
                             <div class="form-group">
-                                <label for="OwnerName" class="required">মালিকের নাম:</label>
-                                <input type="text" id="OwnerName" name="OwnerName" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                                <label for="OwnerName">মালিকের নাম:</label>
+                                <input type="text" id="OwnerName" name="OwnerName" placeholder="প্লেইস হোল্ডার টেক্সট">
                             </div>
                             <div class="form-group">
-                                <label for="OwnerPhone" class="required">মোবাইল নাম্বার:</label>
-                                <input type="number" id="OwnerPhone" name="OwnerPhone" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                                <label for="OwnerPhone">মোবাইল নাম্বার:</label>
+                                <input type="number" id="OwnerPhone" name="OwnerPhone" placeholder="প্লেইস হোল্ডার টেক্সট">
                             </div>
                             <div class="form-group span">
-                                <label for="OwnerAddress" class="required">ঠিকানা:</label>
-                                <textarea name="OwnerAddress" id="OwnerAddress" rows="1"placeholder="এখানে বিস্তারিত ঠিকানা লিখুন" required></textarea>
+                                <label for="OwnerAddress">ঠিকানা:</label>
+                                <textarea name="OwnerAddress" id="OwnerAddress" rows="1"placeholder="এখানে বিস্তারিত ঠিকানা লিখুন"></textarea>
                             </div>
                             <div class="form-group-inline span">
                                 <label for="UsaOfVahicle" class="required">গাড়ির ব্যবহার:</label>
-                                <input type="radio" id="Rented" name="UsaOfVahicle" value="Rented">
+                                <input type="radio" id="Rented" name="UsaOfVahicle" value="Rented" checked>
                                 <label for="Rented">ভাড়ায় চালিত</label>
-                                <input type="radio" id="Personal" name="UsaOfVahicle" value="Personal" checked>
+                                <input type="radio" id="Personal" name="UsaOfVahicle" value="Personal">
                                 <label for="Personal">ব্যক্তিগত</label>
                             </div>
                             <div class="form-group-inline span">
@@ -242,8 +242,8 @@
                     <div class="small-container">
                         <div class="form-input py-2">
                             <div class="form-group span">
-                                <label for="MostStayedStation" class="required">যে স্ট্যাশন/স্থানে বেশি অবস্থান করে থাকেন:</label>
-                                <input type="text" id="MostStayedStation" name="MostStayedStation" placeholder="প্লেইস হোল্ডার টেক্সট" required>
+                                <label for="MostStayedStation">যে স্ট্যাশন/স্থানে বেশি অবস্থান করে থাকেন:</label>
+                                <input type="text" id="MostStayedStation" name="MostStayedStation" placeholder="প্লেইস হোল্ডার টেক্সট">
                             </div>
                             <div class="form-group-inline span time">
                                 <label for="ServiceTime" class="required">কোন কোন সময় সেবাদানে ইচ্ছুক নির্বাচন করুন:</label>
@@ -444,27 +444,32 @@
                             </div>
                             <div class="form-group-inline span">
                                 <label for="Agree" class="required">ডেলিভাই এর মাধ্যমে ভাড়া পেতে চান?</label>
-                                <input type="radio" id="Yes" name="Agree" value="Yes">
+                                <input type="radio" id="Yes" name="Agree" value="Yes" required>
                                 <label for="Yes">হ্যাঁ</label>
-                                <input type="radio" id="No" name="Agree" value="No">
+                                <input type="radio" id="No" name="Agree" value="No" required>
                                 <label for="No">না</label>
                             </div>                  
                             <div class="form-group-inline span">
                                 <label for="Commission" class="required">প্রতি অর্ডারে ৫ টাকা হারে জমা দিন:</label>
-                                <input type="radio" id="Dailly" name="Commission" value="Dailly">
+                                <input type="radio" id="Dailly" name="Commission" value="Dailly" required>
                                 <label for="Dailly">প্রতি দিনে</label>
-                                <input type="radio" id="Weekly" name="Commission" value="Weekly">
+                                <input type="radio" id="Weekly" name="Commission" value="Weekly" required>
                                 <label for="Weekly">প্রতি সপ্তাহে</label>
-                                <input type="radio" id="Monthly" name="Commission" value="Monthly">
+                                <input type="radio" id="Monthly" name="Commission" value="Monthly" required>
                                 <label for="Monthly">প্রতি মাসে</label>
+                            </div>         
+                            <div class="form-group-inline">
+                                <label for="Image" class="required">ছবি আপলোড:</label>
+                                <input type="file" id="Image" name="Image" required>
                             </div>
                             <div class="form-group-inline">
-                                <label for="SubmitDate" class="required">তারিখ:</label>
-                                <input type="date" id="SubmitDate" name="SubmitDate" disabled required>
-                            </div>             
+                                <label for="BirthCirtificate">জন্মনিবন্ধন:</label>
+                                <input type="file" id="BirthCirtificate" name="BirthCirtificate">
+                            </div>
+                            <div></div>
                             <div class="form-group-inline">
-                                <label for="Signature" class="required">সাক্ষর:</label>
-                                <input type="file" id="Signature" name="Signature" required>
+                                <label for="NID">জাতীয় পরিচয়পত্র:</label>
+                                <input type="file" id="NID" name="NID">
                             </div>
                             <button type="submit" class="btn-main span">সাবমিট</button>          
                         </div>
