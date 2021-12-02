@@ -259,6 +259,15 @@ h4 {
   color: #00febe;
 }
 
+#showcase {
+  height: 100vh;
+  background: url("/img/showcase.png") no-repeat center center/cover;
+}
+
+#ad .ads {
+  width: 100%;
+}
+
 #registration-form {
   background: #ccf4ea;
 }

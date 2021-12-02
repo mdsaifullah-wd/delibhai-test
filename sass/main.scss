@@ -41,8 +41,17 @@
   }
 }
 
+// Section: Showcase (HOME)
+#showcase {
+  height: 100vh;
+  background: url("/img/showcase.png") no-repeat center center/cover;
+}
+#ad {
+  .ads {
+    width: 100%;
+  }
+}
 // Section: Registration Form
-
 #registration-form {
   background: $light-color;
   .form-input {
