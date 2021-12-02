@@ -10,6 +10,8 @@
   background: $secondary-color;
   color: $main-color;
   padding: 1.5rem;
+  position: sticky;
+  top: 0;
   .navbar {
     display: flex;
     justify-content: space-between;
