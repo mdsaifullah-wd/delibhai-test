@@ -195,22 +195,24 @@
                             </div>
                             <div class="form-group-inline span">
                                 <label for="ownerOfVahicle" class="required">গাড়ি অন্যের মালিকানাধীন?</label>
-                                <input type="radio" id="yes" name="ownerOfVahicle" value="Owner" required>
+                                <input type="radio" id="yes" name="ownerOfVahicle" value="Owner" required  onclick="show()">
                                 <label for="yes">হ্যাঁ</label>
-                                <input type="radio" id="no" name="ownerOfVahicle" value="Not an Owner" required>
+                                <input type="radio" id="no" name="ownerOfVahicle" value="Not an Owner" required  onclick="hide()">
                                 <label for="no">না</label>
                             </div>
-                            <div class="form-group">
-                                <label for="ownerName">মালিকের নাম:</label>
-                                <input type="text" id="ownerName" name="ownerName" placeholder="মালিকের নাম লিখুন">
-                            </div>
-                            <div class="form-group">
-                                <label for="ownerPhone">মোবাইল নাম্বার:</label>
-                                <input type="number" id="ownerPhone" name="ownerPhone" placeholder="মোবাইল নাম্বার লিখুন">
-                            </div>
-                            <div class="form-group span">
-                                <label for="ownerAddress">ঠিকানা:</label>
-                                <textarea name="ownerAddress" id="ownerAddress" rows="1"placeholder="এখানে বিস্তারিত ঠিকানা লিখুন"></textarea>
+                            <div id="ownerInfo" class="span">
+                                <div class="form-group">
+                                    <label for="ownerName">মালিকের নাম:</label>
+                                    <input type="text" id="ownerName" name="ownerName" placeholder="মালিকের নাম লিখুন">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ownerPhone">মোবাইল নাম্বার:</label>
+                                    <input type="number" id="ownerPhone" name="ownerPhone" placeholder="মোবাইল নাম্বার লিখুন">
+                                </div>
+                                <div class="form-group span">
+                                    <label for="ownerAddress">ঠিকানা:</label>
+                                    <textarea name="ownerAddress" id="ownerAddress" rows="1"placeholder="এখানে বিস্তারিত ঠিকানা লিখুন"></textarea>
+                                </div>
                             </div>
                             <div class="form-group-inline span">
                                 <label for="useOfVahicle" class="required">গাড়ির ব্যবহার:</label>
@@ -478,5 +480,8 @@
             </form>
         </div>
     </section>
+
+
+    <script src="/js/main.js"></script>
 </body>
 </html>
