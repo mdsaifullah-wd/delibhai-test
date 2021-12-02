@@ -375,16 +375,16 @@ h4 {
           transform-origin: right;
 }
 
-#registration-form .form-group-inline .ServiceTime {
+#registration-form .form-group-inline .serviceTime {
   margin: 1rem 0 0 4rem;
 }
 
-#registration-form .form-group-inline .ServiceTime span {
+#registration-form .form-group-inline .serviceTime span {
   color: #555;
   font-size: 1.6rem;
 }
 
-#registration-form .form-group-inline .ServiceArea {
+#registration-form .form-group-inline .serviceArea {
   margin: 1rem 0 0 4rem;
   display: -ms-grid;
   display: grid;
@@ -393,12 +393,12 @@ h4 {
   grid-gap: 1rem;
 }
 
-#registration-form .form-group-inline .ServiceArea div div {
+#registration-form .form-group-inline .serviceArea div div {
   margin: 0.4rem 0;
   background: #a2ebd9;
 }
 
-#registration-form .form-group-inline .ServiceArea input[type="text"] {
+#registration-form .form-group-inline .serviceArea input[type="text"] {
   padding: 0.1rem;
   width: 100%;
   outline: none;

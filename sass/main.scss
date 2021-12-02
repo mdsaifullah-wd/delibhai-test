@@ -129,14 +129,14 @@
       transform: scale(1.2);
       transform-origin: right;
     }
-    .ServiceTime {
+    .serviceTime {
       margin: 1rem 0 0 4rem;
       span {
         color: #555;
         font-size: 1.6rem;
       }
     }
-    .ServiceArea {
+    .serviceArea {
       margin: 1rem 0 0 4rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
