@@ -194,7 +194,6 @@ body {
   line-height: 2rem;
   background: #ccf4ea;
   color: #0f1112;
-  padding-bottom: 20rem;
 }
 
 ul {
@@ -421,4 +420,49 @@ h4 {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
+}
+
+#footer {
+  background: #031742;
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #00c795;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+#footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#footer .contact a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.2rem 0.4rem;
+}
+
+#footer .contact a:hover {
+  color: #00c795;
+}
+
+#footer .contact div:last-child {
+  margin-top: 1rem;
+  padding-bottom: 0;
 }
