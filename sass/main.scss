@@ -83,6 +83,9 @@
     -webkit-appearance: none;
     margin: 0;
   }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
   .span {
     grid-column: 1 / span 2;
   }
