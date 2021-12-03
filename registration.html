@@ -171,7 +171,7 @@
                         <div class="form-input py-2">
                             <div class="form-group vahicleType">
                                 <label for="vahicleType" class="required">গাড়ির ধরণ:</label>
-                                <select name="vahicleType" id="vahicleType" required>
+                                <select name="vahicleType" id="vahicleType" class="select" required>
                                     <option value="মোটর সাইকেল">মোটর সাইকেল</option>
                                     <option value="অটো রিক্সা (ছাদ আছে)">অটো রিক্সা (ছাদ আছে)</option>
                                     <option value="অটো রিক্সা (ছাদ নেই)">অটো রিক্সা (ছাদ নেই)</option>
@@ -186,6 +186,7 @@
                                     <option value="হাইচ গাড়ি">হাইচ গাড়ি</option>
                                     <option value="এম্বুলেন্স">এম্বুলেন্স</option>
                                     <option value="অন্যান্য">অন্যান্য</option>
+                                    <input type="text" name="otherVahicleType" id="otherVahicleType" placeholder="গাড়ির ধরণ লিখুন">
                                 </select>
                             </div>
                             <div class="form-group">
@@ -505,6 +506,7 @@
 
 
     <!-- Javascript Links -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>

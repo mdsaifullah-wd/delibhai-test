@@ -449,6 +449,11 @@ h4 {
   display: none;
 }
 
+#registration-form #otherVahicleType {
+  display: none;
+  margin: 2rem 0 2rem 0;
+}
+
 #footer {
   background: #16161d;
   padding: 3rem 0;
