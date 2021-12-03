@@ -78,6 +78,11 @@
       border: $main-color-dark 0.2px solid;
     }
   }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
   .span {
     grid-column: 1 / span 2;
   }

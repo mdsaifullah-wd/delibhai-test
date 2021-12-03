@@ -304,6 +304,12 @@ h4 {
   border: #00c795 0.2px solid;
 }
 
+#registration-form input::-webkit-outer-spin-button,
+#registration-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 #registration-form .span {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
