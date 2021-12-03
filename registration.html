@@ -453,12 +453,12 @@
                             </div>
                             <div class="form-group-inline span">
                                 <label for="agree" class="required">ডেলিভাই এর মাধ্যমে ভাড়া পেতে চান?</label>
-                                <input type="radio" id="agreeYes" name="agree" value="হ্যাঁ" required>
+                                <input type="radio" id="agreeYes" name="agree" value="হ্যাঁ" required onclick="showCommission()">
                                 <label for="agreeYes">হ্যাঁ</label>
-                                <input type="radio" id="agreeNo" name="agree" value="না" required>
-                                <label for="AgreeNo">না</label>
+                                <input type="radio" id="agreeNo" name="agree" value="না" required onclick="hideCommission()">
+                                <label for="agreeNo">না</label>
                             </div>                  
-                            <div class="form-group-inline span">
+                            <div class="form-group-inline span" id="commission">
                                 <label for="commission" class="required">প্রতি অর্ডারে ৫ টাকা হারে জমা দিন:</label>
                                 <input type="radio" id="dailly" name="commission" value="প্রতি দিনে" required>
                                 <label for="dailly">প্রতি দিনে</label>

@@ -86,6 +86,7 @@
   input[type="number"] {
     -moz-appearance: textfield;
   }
+
   .span {
     grid-column: 1 / span 2;
   }
@@ -188,6 +189,9 @@
     display: none;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
+  }
+  #commission {
+    display: none;
   }
 }
 
