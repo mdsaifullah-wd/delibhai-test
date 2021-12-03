@@ -397,6 +397,10 @@ h4 {
           transform-origin: right;
 }
 
+#registration-form .form-group-inline input[type="file"] {
+  display: block;
+}
+
 #registration-form .form-group-inline .serviceTime {
   margin: 1rem 0 0 4rem;
 }
@@ -497,4 +501,23 @@ h4 {
 #footer .contact div:last-child {
   margin-top: 1rem;
   padding-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1.5rem;
+  }
+  #registration-form .form-input {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #registration-form .span {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  #registration-form .form-group-inline .serviceArea {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
 }

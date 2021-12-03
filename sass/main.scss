@@ -150,6 +150,9 @@
       transform: scale(1.2);
       transform-origin: right;
     }
+    input[type="file"] {
+      display: block;
+    }
     .serviceTime {
       margin: 1rem 0 0 4rem;
       span {
@@ -226,6 +229,26 @@
     div:last-child {
       margin-top: 1rem;
       padding-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1.5rem;
+  }
+  #registration-form {
+    .form-input {
+      grid-template-columns: 1fr;
+    }
+    .span {
+      grid-column: 1;
+    }
+    .form-group-inline {
+      .serviceArea {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+      }
     }
   }
 }
